@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import { getChannel, useChatContext } from 'stream-chat-react';
+import {useChatContext } from 'stream-chat-react';
 import {SearchIcon} from '../assets';
 
 const ChannelSearch = () => {
@@ -8,7 +8,7 @@ const ChannelSearch = () => {
 
     const getChannels = async (text) => {
         try {
-            // fetch comments here 
+            // TODO: fetch comments here 
         } catch (error) {
             setQuery('');
         }
