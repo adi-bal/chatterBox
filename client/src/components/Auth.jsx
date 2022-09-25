@@ -16,7 +16,7 @@ const Auth = () => {
                 <form onSubmit = {()=>{}}>
                     {isSignup && (
                         <div className="auth__form-container_fields-content_input">
-                            <label htmlFor="fullName"> Full Name</label>
+                            <label htmlFor="fullName">Full Name</label>
                             <input 
                                 name="fullName"
                                 type="text"
@@ -26,6 +26,16 @@ const Auth = () => {
                             />
                         </div>
                     )}
+                        <div className="auth__form-container_fields-content_input">
+                            <label htmlFor="username">username</label>
+                            <input 
+                                name="username"
+                                type="text"
+                                placeholder="User Name"
+                                onChange={handleChange}
+                                required
+                            />
+                        </div>
                 </form>
             </div>
         </div>
